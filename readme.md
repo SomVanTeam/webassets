@@ -1,1 +1,1 @@
-# assets i use for my web games, not much to see here
+# assets i use for my web stuff, not much to see here
