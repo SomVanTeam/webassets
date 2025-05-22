@@ -1,4 +1,4 @@
---[[_G.SWATOGARDENLOAD = 0 -- DEBUG REMOVE LATERlll
+--[[_G.SWATOGARDENLOAD = 0 -- DEBUG REMOVE LATER
 if _G.SWATOGARDENLOAD == 15532 then
     error("SWATOGarden is already running!")
 end
@@ -61,9 +61,9 @@ togglef.Parent = g
 togglef.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
 togglef.TextScaled = true
 togglef.Text = "V"
-sellallbtn.Size = UDim2.new(0.03,0,0.08,0)
-sellallbtn.AnchorPoint = Vector2.new(0.5,0)
-sellallbtn.Position = UDim2.new(0.935,0,0.22,0)
+togglef.Size = UDim2.new(0.03,0,0.08,0)
+togglef.AnchorPoint = Vector2.new(0.5,0)
+togglef.Position = UDim2.new(0.935,0,0.22,0)
 togglef.Activated:Connect(function()
    f.Visible = not f.Visible
 end)
