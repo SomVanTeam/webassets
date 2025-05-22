@@ -1,4 +1,4 @@
---[[_G.SWATOGARDENLOAD = 0 -- DEBUG REMOVE LATER
+--[[_G.SWATOGARDENLOAD = 0 -- DEBUG REMOVE LATERlll
 if _G.SWATOGARDENLOAD == 15532 then
     error("SWATOGarden is already running!")
 end
