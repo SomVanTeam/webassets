@@ -73,6 +73,7 @@ sellallbtn.Parent = f
 sellallbtn.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
 sellallbtn.TextScaled = true
 sellallbtn.Text = "[UNDONE] Sell All"
+sellallbtn.TextColor3 = Color3.new(1,1,1)
 sellallbtn.Size = UDim2.new(1,0,0.1,0)
 sellallbtn.AnchorPoint = Vector2.new(0.5,0)
 sellallbtn.Position = UDim2.new(0.5,0,0,0)
@@ -162,18 +163,15 @@ g.Parent = game.Players.LocalPlayer.PlayerGui
 warn("test 7")
 updatefarm()
 while true do -- loop
-warn("test 8")
    if AUTOBUYENABLED then
       teleport(SHOPPOS)
-      -- check stock
-      -- buy fruit of the rarity u want
       for _, item in pairs(game.Players.LocalPlayer.PlayerGui.Seed_Shop.Frame.ScrollingFrame:GetChildren()) do
          local data = item:FindFirstChild("Main_Frame")
          if not data then
             continue
          end
          if data.Stock_Text.Text == "X0 Stock" then
-            continue -- skip if no stock of course
+            --continue -- skip if no stock of course
          end
          local rarity = data.Rarity_Text.Text
          if rarity == "Prismatic" and not BUYPRISMATIC then
@@ -187,9 +185,9 @@ warn("test 8")
          else
             continue
          end
-         if REPORTSTOCKONBUY then
+         --if REPORTSTOCKONBUY then
             reportfruit(item.Name)
-         end
+         --end
       end
       teleport(FARMPOS)
    end
